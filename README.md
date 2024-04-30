@@ -11,10 +11,15 @@ To use TriSwitcher, add the following dependency to your `pubspec.yaml` file:
 `yaml`
 ```
 dependencies:
-  tri_switcher: ^1.0.0
+  tri_switcher: ^0.0.2
 ```
 
 Then import the package in your Dart code:
+
+```import 'package:tri_switcher/tri_switcher.dart';```
+
+## Preview
+https://github.com/dev-zayn/triSwitcher/assets/38259126/ab8f665e-2693-4244-a13b-f47edeab1fb9
 
 ## Properties
 - final ValueChanged<SwitchPosition> onChanged;
