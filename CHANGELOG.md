@@ -3,4 +3,6 @@
 * Initial release.
 
 ## 0.0.2
-* Added video example.
+* Added Video preview.
+## 0.0.3
+* Added Photo preview.
