@@ -1,6 +1,6 @@
 name: tri_switcher
-description: "Introducing Tri_Switcher. A versatile Flutter package offering a sleek switcher with three states - left, center, and right. Perfect for navigating, filtering, and toggling options with ease. Simplify your UI interactions now!"
-version: 0.0.3
+description: "Introducing Tri_Switcher: A sleek Flutter package with left, center, and right states for effortless UI navigation and toggling."
+version: 0.0.4
 repository: "https://github.com/dev-zayn/triSwitcher"
 
 environment:

@@ -11,7 +11,7 @@ To use TriSwitcher, add the following dependency to your `pubspec.yaml` file:
 `yaml`
 ```
 dependencies:
-  tri_switcher: ^0.0.3
+  tri_switcher: ^0.0.4
 ```
 
 Then import the package in your Dart code:
@@ -33,14 +33,12 @@ https://github.com/dev-zayn/triSwitcher/assets/38259126/ab8f665e-2693-4244-a13b-
 - final Color firstStateToggleColor;
 - final Color secondStateToggleColor;
 - final Color thirdStateToggleColor;
-- final List<Widget>? icons;
+- final List<widget<x>>? icons;
 - final BoxShape toggleShape;
 - final BorderRadiusGeometry borderRadius;
 - final Duration duration;
 - final Curve curve;
-- final double? width;
-- final double? height;
-- final double toggleSize;
+- final double? size;
 
 ## Usage
 

@@ -7,7 +7,7 @@ enum SwitchPosition { left, center, right }
 
 class TriSwitcher extends StatefulWidget {
   const TriSwitcher({
-    Key? key,
+    super.key,
     required this.onChanged,
     this.initialPosition,
     this.firstStateBackgroundColor = Colors.grey,
@@ -20,13 +20,10 @@ class TriSwitcher extends StatefulWidget {
     this.borderRadius = const BorderRadius.all(Radius.circular(20.0)),
     this.duration = const Duration(milliseconds: 250),
     this.curve = Curves.linear,
-    this.width = 76.5,
-    this.height = 36.0,
-    this.toggleSize = 35.0,
+    this.size = 76.5,
     this.icons,
-  })  : assert(icons == null || icons.length == 3,
-            'icons must be null or a list of exactly 3 widgets'),
-        super(key: key);
+  }) : assert(icons == null || icons.length == 3,
+            'icons must be null or a list of exactly 3 widgets');
 
   /// Callback for the switcher
   final ValueChanged<SwitchPosition> onChanged;
@@ -68,13 +65,7 @@ class TriSwitcher extends StatefulWidget {
   final Curve curve;
 
   /// Width of the switcher
-  final double? width;
-
-  /// Height of the switcher
-  final double? height;
-
-  /// Size of the toggle circle
-  final double toggleSize;
+  final double size;
 
   @override
   State<TriSwitcher> createState() => _TriStateToggleSwitchPosition();
@@ -130,8 +121,8 @@ class _TriStateToggleSwitchPosition extends State<TriSwitcher> {
       child: AnimatedContainer(
         duration: widget.duration,
         curve: widget.curve,
-        width: widget.width,
-        height: widget.height,
+        width: widget.size,
+        height: widget.size * 0.45,
         decoration: BoxDecoration(
           color: _switchPosition == SwitchPosition.left
               ? widget.firstStateBackgroundColor
@@ -147,8 +138,8 @@ class _TriStateToggleSwitchPosition extends State<TriSwitcher> {
                 ? Alignment.center
                 : Alignment.centerRight),
         child: Container(
-            height: widget.toggleSize,
-            width: widget.toggleSize,
+            height: widget.size * .44,
+            width: widget.size * .44,
             padding: const EdgeInsets.all(1.0),
             decoration: BoxDecoration(
               shape: widget.toggleShape,

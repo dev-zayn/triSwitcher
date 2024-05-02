@@ -6,3 +6,5 @@
 * Added Video preview.
 ## 0.0.3
 * Added Photo preview.
+## 0.0.4
+* Replacing width, height, and toggleSize with size.
