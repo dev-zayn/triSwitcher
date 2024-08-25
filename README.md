@@ -11,7 +11,7 @@ To use TriSwitcher, add the following dependency to your `pubspec.yaml` file:
 `yaml`
 ```
 dependencies:
-  tri_switcher: ^0.0.4
+  tri_switcher: ^0.0.5
 ```
 
 Then import the package in your Dart code:
@@ -71,8 +71,7 @@ class MyApp extends StatelessWidget {
       title: 'TriSwitcher Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple)
       ),
       home: const SwitcherExample(),
     );
@@ -113,6 +112,7 @@ class SwitcherExample extends StatelessWidget {
                   secondStateBackgroundColor: Colors.deepPurple.shade200,
                   thirdStateBackgroundColor: Colors.deepPurple.shade400,
                   thirdStateToggleColor: Colors.deepPurple.shade900,
+                  borderRadius: BorderRadius.circular(20),
                   icons: const [
                     Icon(Icons.sunny, color: Colors.amber),
                     Icon(Icons.nightlight_round, color: Colors.purple),
