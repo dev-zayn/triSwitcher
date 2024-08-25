@@ -55,6 +55,7 @@ class SwitcherExample extends StatelessWidget {
                   secondStateBackgroundColor: Colors.deepPurple.shade200,
                   thirdStateBackgroundColor: Colors.deepPurple.shade400,
                   thirdStateToggleColor: Colors.deepPurple.shade900,
+                  borderRadius: BorderRadius.circular(20),
                   icons: const [
                     Icon(Icons.sunny, color: Colors.amber),
                     Icon(Icons.nightlight_round, color: Colors.purple),
